@@ -1,0 +1,40 @@
+<!doctype html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Calcula tu salario</title>
+  </head>
+  <body>
+      <h1>Convertidor Salario Mensual-Anual</h1>
+      <h3>Podes calcular tu salario anual partiendo desde el salario mensual o bien calcular el salario mensual partiendo desde el salario anual</h3>
+      <form>
+          <div>
+          <label for="">Elegi el tipo de salario que tenes</label>
+          <select id="tipo-salario">
+              <option value="predeterminado"selected disabled>Tipo de salario...</option>
+              <option value="salario-mensual">Salario Mensual</option>
+              <option value="salario-anual">Salario Anual</option>
+          </select>
+          </div>
+
+          <div>
+            <label>Ingresa tu salario</label>
+            <input type="number" id="salario-usuario">
+          </div>
+
+          <div>
+            <label id="tipo-de-salario-resultado"></label>
+            <input type="number" id="salario-resultado" disabled>
+          </div>
+
+          <div>
+          <input type="button" value="Calcular" id="boton-calcular"> 
+          </div>
+      </form>
+      <script src="index.js"></script>
+  </body>
+  </html>
+  
